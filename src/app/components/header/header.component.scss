@@ -14,8 +14,8 @@ ion-menu-button {
     color: #1f1f1f;
 }
 
-ion-toolbar {
-    padding: 10px !important;
+ion-toolbar.ios {
+    padding: 5px 10px !important;
 }
 
 .desktop-show.sm-logo {

@@ -54,10 +54,23 @@ ion-card ion-text {
     color: #6c6c6c;
 }
 
+.modal-wrapper.sc-ion-modal-md ion-grid {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal-wrapper.sc-ion-modal-md .ion-page {
+    justify-content: center !important;
+    background: #000 !important;
+}
 
 app-header+ion-content {
     --ion-background-color: linear-gradient(180deg, #CCA64F, #996A22);
     color: #fff;
+}
+
+.iso-images-list ion-img {
+    overflow: hidden;
 }
 
 ion-input,

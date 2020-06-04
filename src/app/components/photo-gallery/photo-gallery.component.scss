@@ -1,0 +1,49 @@
+.all-names-filter li {
+    font-weight: 500;
+    color: #1f1f1f;
+    font-size: 13px;
+    cursor: pointer;
+    padding-left: 15px;
+    float: right;
+}
+
+li:first-child {
+    float: left !important;
+    padding: 0 !important;
+}
+
+.all-names-filter {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.iso-images-list {
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+.iso-images {
+    margin: 0 -5px;
+}
+
+.iso-images-list[_ngcontent-pwt-c137] {
+    padding: 0px 4px;
+    border-radius: 5px !important;
+}
+
+.iso-images-list ion-img.md.hydrated {
+    height: 95px;
+    object-fit: cover !important;
+    border-radius: 5px !important;
+}
+
+
+.image-p2 ion-grid {
+    padding: 0 17px;
+}

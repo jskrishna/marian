@@ -1,3 +1,20 @@
-<p>
-  photo-gallery works!
-</p>
+<ion-card>
+  <ion-text>
+    <ion-title>Recent Projects</ion-title>
+    <p>Check out our most recent products. You can even filter them with great ease and select your favorite category.
+    </p>
+    <ion-grid>
+      <ul class="all-names-filter">
+        <li (click)="filterImages('all')"><span>All</span></li>
+        <li (click)="filterImages('tech')"><span>Tech</span></li>
+        <li (click)="filterImages('food')"><span>Food</span></li>
+        <li (click)="filterImages('nature')"><span>Nature</span></li>
+      </ul>
+      <ion-row class="iso-images">
+        <ion-col class="iso-images-list" size="4" *ngFor="let image of displayImages; let i = index">
+          <ion-img [src]="image.url" (click)="openImageViewer(displayImages, i)"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-text>
+</ion-card>
