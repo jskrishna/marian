@@ -1,0 +1,23 @@
+@media(min-width: 992px) {
+    .desktop-show {
+        display: none;
+    }
+
+}
+
+.desktop-show.sm-logo img {
+    width: 130px;
+}
+
+ion-menu-button {
+    font-size: 16px;
+    color: #1f1f1f;
+}
+
+ion-toolbar {
+    padding: 10px !important;
+}
+
+.desktop-show.sm-logo {
+    margin-left: 10px;
+}

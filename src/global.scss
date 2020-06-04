@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-card {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, .11), 0 5px 25px 0 rgba(0, 0, 0, .1) !important;
+    background: #fff;
+}
+
+ion-card ion-title {
+    padding: 0;
+    font-size: 21px;
+    line-height: 25px;
+    color: #000;
+    font-weight: 700;
+    position: static !important;
+    margin-bottom: 10px;
+}
+
+ion-card ion-text {
+    line-height: 23px;
+    font-size: 13px;
+    color: #6c6c6c;
+}
+
+
+app-header+ion-content {
+    --ion-background-color: linear-gradient(180deg, #CCA64F, #996A22);
+    color: #fff;
+}
+
+ion-input,
+ion-item {
+    --background: #fff !important;
+}
+
+
+@media(min-width: 992px) {
+    ion-menu {
+        width: 220px;
+    }
+
+}
