@@ -1,12 +1,9 @@
-@media(min-width: 992px) {
-    .desktop-show {
-        display: none;
-    }
-
-}
+@media(min-width: 992px) {}
 
 .desktop-show.sm-logo img {
-    width: 130px;
+    width: 70px;
+    position: relative;
+    top: 1px;
 }
 
 ion-menu-button {

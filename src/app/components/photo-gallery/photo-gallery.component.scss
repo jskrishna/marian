@@ -38,7 +38,7 @@ li:first-child {
 }
 
 .iso-images-list ion-img.md.hydrated {
-    height: 95px;
+    height: 250px;
     object-fit: cover !important;
     border-radius: 5px !important;
 }
@@ -46,4 +46,11 @@ li:first-child {
 
 .image-p2 ion-grid {
     padding: 0 17px;
+}
+
+@media(max-width: 767px) {
+
+    .iso-images-list ion-img.md.hydrated {
+        height: 80px;
+    }
 }

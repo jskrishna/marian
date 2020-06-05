@@ -1,13 +1,28 @@
-<!-- <ion-slides pager="true" [options]="slideOpts">
-  <ion-slide *ngFor="let x of videos">
-    <ion-grid>
-      <ion-row>
-        <ion-col size=12 *ngFor="let video of videos">
-          <video height="400px" width="400px" src={{video}} controls="controls" preload="metadata"
-            webkit-playsinline="webkit-playsinline" controlsList="nodownload"></video>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-slide>
+<!-- <ion-fab vertical="center" horizontal="end" slot="fixed" (click)="slideNext()">
+  <ion-fab-button>
+    <ion-icon name="arrow-forward-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab> -->
 
-</ion-slides> -->
+<ion-card>
+  <ion-slides [options]="slideOpts" #slider>
+
+    <ion-fab vertical="center" horizontal="start" slot="fixed" (click)="slidePrev(slider)">
+      <ion-fab-button>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab vertical="center" horizontal="end" slot="fixed" (click)="slideNext(slider)">
+      <ion-fab-button>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-slide>
+      <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Lc_eV1o4cb0?enablejsapi=1&amp;rel=0"
+        frameborder="0"></iframe>
+    </ion-slide>
+
+  </ion-slides>
+</ion-card>

@@ -58,7 +58,8 @@
     margin-right: auto;
     color: #6c6c6c;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 1.6;
+    font-size: 13px;
 }
 
 .footer-menu a {
@@ -74,11 +75,18 @@
     padding: 6px 0 8px 0;
 }
 
-.footer-main span {
-    color: #6c6c6c;
-    font-size: 10px;
-    padding-top: 10px;
-    display: inline-block;
+.foot-text label span {
+    display: block;
+}
+
+.foot-text label span {
+    font-size: 13px !important;
+    margin-top: 10px;
+}
+
+.foot-text label {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .footer-main span a {
